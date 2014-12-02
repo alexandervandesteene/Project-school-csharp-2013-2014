@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSGroep03(2013-2014)", "CSGroep03(2013-2014)\CSGroep03(2013-2014).csproj", "{2CB6F3A6-5A01-4C87-84CF-F722943315BB}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "KlasseDiagram", "KlasseDiagram\KlasseDiagram.modelproj", "{ECA77EBD-9FE6-4511-A60D-B4057EDBB4FE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bru-teamfound.hogeschool-wvl.be:8080/tfs/soiii
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CSGroep03(2013-2014)\\CSGroep03(2013-2014).csproj
+		SccProjectName1 = CSGroep03(2013-2014)
+		SccLocalPath1 = CSGroep03(2013-2014)
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB6F3A6-5A01-4C87-84CF-F722943315BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB6F3A6-5A01-4C87-84CF-F722943315BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB6F3A6-5A01-4C87-84CF-F722943315BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB6F3A6-5A01-4C87-84CF-F722943315BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA77EBD-9FE6-4511-A60D-B4057EDBB4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA77EBD-9FE6-4511-A60D-B4057EDBB4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA77EBD-9FE6-4511-A60D-B4057EDBB4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA77EBD-9FE6-4511-A60D-B4057EDBB4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

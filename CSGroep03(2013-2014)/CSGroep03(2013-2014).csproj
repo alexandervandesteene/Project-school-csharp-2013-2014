@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CB6F3A6-5A01-4C87-84CF-F722943315BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSGroep03_2013_2014_</RootNamespace>
+    <AssemblyName>CSGroep03%282013-2014%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Model\CSGroep03DataSet.cs">
+      <DependentUpon>CSGroep03DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\CSGroep03DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSGroep03DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataBank.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="View\Keuze.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="View\Aanmaken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Aanmaken.Designer.cs">
+      <DependentUpon>Aanmaken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Beginscherm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Beginscherm.Designer.cs">
+      <DependentUpon>Beginscherm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Inloggen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Inloggen.Designer.cs">
+      <DependentUpon>Inloggen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\MijnEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MijnEvents.Designer.cs">
+      <DependentUpon>MijnEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RapportInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RapportInfo.Designer.cs">
+      <DependentUpon>RapportInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RapportMijnEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RapportMijnEvents.Designer.cs">
+      <DependentUpon>RapportMijnEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RapportToekomst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RapportToekomst.Designer.cs">
+      <DependentUpon>RapportToekomst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Registreren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Registreren.Designer.cs">
+      <DependentUpon>Registreren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WachtwoordWijzigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WachtwoordWijzigen.Designer.cs">
+      <DependentUpon>WachtwoordWijzigen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rapporten\AlleEvents.rdlc" />
+    <EmbeddedResource Include="Rapporten\EventsDieGebruikerOrganiseert.rdlc" />
+    <EmbeddedResource Include="Rapporten\EventsDieGebruikersVolgt.rdlc" />
+    <EmbeddedResource Include="Rapporten\ToekomstigeEvents.rdlc" />
+    <EmbeddedResource Include="View\Aanmaken.resx">
+      <DependentUpon>Aanmaken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Beginscherm.resx">
+      <DependentUpon>Beginscherm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Inloggen.resx">
+      <DependentUpon>Inloggen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\MijnEvents.resx">
+      <DependentUpon>MijnEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RapportInfo.resx">
+      <DependentUpon>RapportInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RapportMijnEvents.resx">
+      <DependentUpon>RapportMijnEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RapportToekomst.resx">
+      <DependentUpon>RapportToekomst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Registreren.resx">
+      <DependentUpon>Registreren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WachtwoordWijzigen.resx">
+      <DependentUpon>WachtwoordWijzigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Model\CSGroep03DataSet.xsc">
+      <DependentUpon>CSGroep03DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Model\CSGroep03DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CSGroep03DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\CSGroep03DataSet.xss">
+      <DependentUpon>CSGroep03DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentFoto %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentFoto %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentFoto %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StudentFoto.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
